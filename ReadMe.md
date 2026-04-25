@@ -7,7 +7,7 @@
     * Create keys
       * ssh-keygen
     * Copy pub key to pfSense
-      * cat ~/.ssh/id_rsa.pub | ssh -p 2222 pfsense@pfsense.home "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+      * cat ~/.ssh/id_rsa.pub | ssh -p 2222 pfSense@gateway.home "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
   * Account should be set to not expire
 * Schedule scripts to run with Synology's Task Scheduler
   * Schedule contents of CopyCertToSynologyFromPfSense.sh to execute as pfSense user
